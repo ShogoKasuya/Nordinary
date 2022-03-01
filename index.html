@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2? family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_top.css">
+    <!--ファビコン-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <title>NORDINARY</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="wrapper page-header">
+        <h1><a href="index.html"><img class="main-logo" src="images/logo.svg" alt="Nordinary TOPページ"></a></h1>
+        <!-- メニューバー -->
+        <!-- ここからハンバーガーメニュー -->
+        <div class="line-list" id="js-hamburger">
+            <span></span>
+            <span></span>
+        </div>  
+        <div class="menu-bg" id="js-menu-bg"></div>
+        <!-- ここまでハンバーガーメニュー -->
+        <nav class="global-nav">
+            <ul class="main-nav link-list">
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#item">ITEM</a></li>
+                <li><a href="#">ONLINESHOP</a></li>
+                <li><a href="event.html">EVENT</a></li>
+                <li><a href="shoplist.html">SHOPLIST</a></li>
+                <li><a href="#"> COMPANY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- main-visual -->
+    <div class="main-visual interval">
+        <div class="slider">
+            <div class="slider-item visual1"></div>
+            <div class="slider-item visual2"></div>
+            <div class="slider-item visual3"></div>
+        </div>
+        <div class="catchcopy show">
+            <p>自然豊かな、<br>癒しのひとときを。</p>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div id="news" class="wrapper">
+        <h2 class="ttl">NEWS</h2>
+        <p class="sub-ttl">最新情報</p>
+
+        <dl class="news">
+            <dt class="news-ttl">2021.10.08</dt>
+            <dd class="news-desc">「Nordinary POP UP」開催のお知らせ</dd>
+        </dl>
+        <dl class="news">
+            <dt class="news-ttl">2021.09.02</dt>
+            <dd class="news-desc">イベント情報を更新しました。</dd>
+        </dl >
+        <dl class="news">
+            <dt class="news-ttl">2021.08.30</dt>
+            <dd class="news-desc">Nordinaryを名乗る偽サイトやメールにご注意ください。</dd>
+        </dl>
+        <dl class="news">
+            <dt class="news-ttl">2021.07.15</dt>
+            <dd class="news-desc">お盆期間中の営業休止のお知らせ</dd>
+        </dl>
+        <div class="btn-center">
+            <a href="#" class="btn">READ MORE<div class="arrow"></div></a>
+        </div>
+    </div>
+
+    <!-- secondary-visual -->
+    <div class="secondary-visual interval">
+        <div class="seco-img"></div>
+        <div class="concept">
+            <h2 class="con-ttl">全ての大人へ、不自由な自由を。</h2>
+            <br>
+            <p class="con-sentence">
+                <span>日本中で世界中で全ての大人が、</span><span>慌ただしい普段の生活から離れ</span><br><span>五感で自然を感じられる癒しの空間を提供することが</span><span>私たちの使命です。</span><br><br><span>「忘れられないスローライフを、大切な人たちと」</span><br><br><span>自然に囲まれた心地いい時間の中へ。
+            </p>
+                
+        </div>
+    </div>
+
+    <!-- item -->
+    <div id="item" class="item wrapper">
+        <h2 class="ttl">ITEM</h2>
+        <p class="sub-ttl">商品紹介</p>
+        <!-- ここからswiper -->
+        <div class="swiper-parent">
+            <div class="swiper">
+                <!-- スライドを囲む div 要素（必須） -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="images/item_01.png"><img src="images/item_01.png" alt="商品1"></a>
+                        <p class="item-data">リビングシェル<br>¥65,000（税込み）</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/item_02.png"><img src="images/item_02.png" alt="商品2"></a>
+                        <p class="item-data">パンクッカー<br>¥39,600（税込み）</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/item_03.png"><img src="images/item_03.png" alt="商品3"></a>
+                        <p class="item-data">ケトル<br>¥11,000（税込み）</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="images/item_04.png"><img src="images/item_04.png" alt="商品4"></a>
+                        <p class="item-data">ダウンシュラフ<br>¥64,680（税込み）</p>
+                    </div>
+                </div>
+                <!-- ナビゲーションボタンの div 要素（省略可能） -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- ここまでswiper -->
+        <div class="btn-center">
+            <a href="#" class="btn">SHOP LIST<div class="arrow"></div></a>
+        </div>
+    </div>
+
+    <!-- event -->
+    <div id="event" class="event wrapper">
+        <h2 class="ttl">EVENT</h2>
+        <p class="sub-ttl">イベント</p>
+        <div class="even-bnrs">
+            <div class="bnr">
+                <div class="even-bnr"><a href="event.html#music"><img src="images/banner_music_top.png" alt="bannar"></a></div>
+                <div class="even-data">
+                    <a href="event.html#music">
+                        <h3 class="even-ttl">MUSIC × CAMP</h3>
+                        <p class="even-day">開催日時：10月22日（土）20：00 - 21：30</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bnr2">
+                <div class="even-bnr2"><a href="event.html#sky"><img src="images/banner_sky_top.png" alt="bannar2"></a></div>
+                <div class="even-data">
+                    <a href="event.html#sky">
+                        <h3 class="even-ttl">夜空イベント</h3>
+                        <p class="even-day">開催日時：11月1日（土）20：00 - 22：00</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- instagram -->
+    <div class="instagram wrapper">
+        <h2 class="ttl">INSTAGRAM</h2>
+        <p class="sub-ttl">インスタグラム</p>
+        <div class="grid">
+            <div class="inst-img">
+            </div>
+            <div class="inst-img">
+            </div>
+            <div class="inst-img">
+            </div>
+            <div class="inst-img">
+            </div>
+            <div class="inst-img">
+            </div>
+        </div>
+        <div class="btn-center">
+            <a href="#" class="btn">AND MORE<div class="arrow"></div></a>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="page-footer">
+            <a href="index.html"><img class="footer-logo" src="images/logofooter.svg" alt="Nordinary TOPページ"></a>
+            <nav>
+                <!-- footer差し替え -->
+                <div class="footer-nav">
+                    <p><a href="header.html">トップ</a></p>
+                    <p><a href="shoplist.html">  |  店舗・施設情報</a></p>
+                    <p><a href="#">  |  商品紹介</a></p>
+                    <p><a href="#">  <span class="hidden-bar-res">|</span>  オンラインショップ</a></p>
+                    <p><a href="event.html">イベント</a></p>
+                    <p><a href="#">  |  企業情報</a></p>
+                    <p><a href="#">  |  採用情報</a></p>
+                    <p><a href="contact.html">  <span class="hidden-bar-res">|</span>  お問い合わせ</a></p>
+                    <p><a href="#">  <span class="hidden-bar">|</span>  プライバシーポリシー</a></p>
+                </div>
+                <!-- footer差し替え -->
+            </nav>
+        </div>
+            <div class="sns-logo">
+                <a href="#"><img src="images/sns1.png" alt="Facebook"></a>
+                <a href="#"><img src="images/sns2.png" alt="Twitter"></a>
+                <a href="#"><img src="images/sns3.png" alt="Instagram"></a>
+            </div>
+            <p class="copy-right">© 2021 COPYRIGHT</p>
+        
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- ハンバーガーメニュー用 -->
+    <script>
+        $(function() {
+            function toggleNav() {
+                var body = document.body;
+                var hamburger = document.getElementById("js-hamburger");
+                var blackBg = document.getElementById("js-menu-bg");
+                // クリックしたときにクラス付与
+                hamburger.addEventListener("click", function() {
+                body.classList.toggle("nav-open");
+                hamburger.classList.toggle("active");
+                });
+                // クリックしたときにクラス付与
+                blackBg.addEventListener("click", function() {
+                body.classList.remove("nav-open");
+                hamburger.classList.remove("active");
+                });
+            }
+            toggleNav();
+        });
+      </script>
+
+    <!-- main visual用 -->
+	<script>
+    var $slide = $(".slider")
+    .slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        speed: 2000,
+        autoplaySpeed: 4000,
+        autoplay: true
+    })
+    .on({
+    beforeChange: function(event, slick, currentSlide, nextSlide) {
+        $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
+        $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
+    },
+    afterChange: function() {
+        $(".preve-slide", this).removeClass("preve-slide slide-animation");
+    }
+    });
+    $slide.find(".slick-slide").eq(0).addClass("slide-animation");
+        $('.catchcopy').hide().fadeIn('slow');
+	</script>
+    <!-- global navi用 -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script>
+        if(window.matchMedia("(max-width: 599px)").matches){            
+            //item用（レスポンシブ）
+            let mySwiper = new Swiper ('.swiper', {
+                // 以下にオプションを設定
+                loop: true, //最後に達したら先頭に戻る
+                slidesPerView:1,  //スライドを2つ（分）表示
+                autoplay: {
+                    delay: 2000,
+                },
+                //ページネーション表示の設定
+                pagination: { 
+                    el: '.swiper-pagination', //ページネーションの要素
+                    type: 'bullets', //ページネーションの種類
+                    clickable: true, //クリックに反応させる
+                },
+                //ナビゲーションボタン（矢印）表示の設定
+                navigation: { 
+                    nextEl: '.swiper-button-next', //「次へボタン」要素の指定
+                    prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+                },
+            });
+        } else {
+            // item用（PC画面）
+            let mySwiper = new Swiper ('.swiper', {
+            // 以下にオプションを設定
+            loop: true, //最後に達したら先頭に戻る
+            slidesPerView:4,  //スライドを2つ（分）表示
+                autoplay: {
+                    delay: 2000,
+                },
+            //ページネーション表示の設定
+                pagination: { 
+                    el: '.swiper-pagination', //ページネーションの要素
+                    type: 'bullets', //ページネーションの種類
+                    clickable: true, //クリックに反応させる
+                },
+            //ナビゲーションボタン（矢印）表示の設定
+                navigation: { 
+                    nextEl: '.swiper-button-next', //「次へボタン」要素の指定
+                    prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+                },
+            });
+        }
+    </script>
+    <!-- event用 -->
+    <script type="text/javascript">
+        $(function () {
+            $(".even-bnr").hover(function () {
+                //マウスオーバーしたときの処理
+                $(this).stop().animate({opacity:0.5},"fast");
+            },function () {
+                //マウスアウトしたときの処理
+                $(this).stop().animate({opacity:1},"fast");
+            });
+        });
+        </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".even-bnr2").hover(function () {
+                //マウスオーバーしたときの処理
+                $(this).stop().animate({opacity:0.5},"fast");
+            },function () {
+                //マウスアウトしたときの処理
+                $(this).stop().animate({opacity:1},"fast");
+            });
+        });
+        </script>
+</body>
+</html>

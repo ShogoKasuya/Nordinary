@@ -1,0 +1,525 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+
+/* ヘッダー */
+.main-logo{
+    height: 55px;
+}
+.main-nav{
+    display: flex;
+    font-size: 14px;
+    margin-top: 38px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.main-nav a:hover{ color:#916659 ;
+}
+.main-nav li {
+    margin-left: 14px;
+}
+.main-nav a {
+    color:#231815 ;
+}
+.header {
+    border-bottom: 17px solid #d4ccbd;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #d4ccbd;
+    padding: 25px;
+}
+.page-footer{
+    display: flex;
+    justify-content: space-between;  
+}
+.footer-logo{
+    height: 52px;
+    margin: 10px;
+}
+.footer-nav{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-nav a{
+    color: #4c4948;
+    font-size: 14px;
+}
+.footer-nav a:hover{
+    color: #ffffff; 
+}
+.footer-nav p{
+    line-height: 45px;
+}
+.hidden-bar{
+    display: none;
+}
+.copy-right{
+    color: #231815;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.sns-logo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.sns-logo a{
+    margin: 21px;
+}
+/* top画像部分 */
+.bg-img{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 35px;
+
+}
+.page-title{
+    color: #ffffff;
+    padding: 100px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 1.75rem;
+    font-family: 'Shippori Mincho', serif;
+}
+#shop-list{
+    background-image: url(../images/ContactTop.jpg)
+}
+/* サブタイトル */
+.sub-title{
+    font-size: 1.6rem;
+    line-height: 5px;
+    font-family: 'Shippori Mincho', serif;
+}
+.title-line{
+    border-bottom: 4px solid #d4ccbd;
+}
+.ttl {
+    display: flex;
+    align-items: center; /* 垂直中心 */
+    justify-content: center; /* 水平中心 */
+    margin-bottom: -20px;
+}
+.ttl:before, .ttl:after {
+    border-top: 1px solid;
+    content: "";
+    width: 1em; /* 線の長さ */
+}
+.ttl:before {
+    margin-right: 0.5em; /* 文字の右隣 */
+}
+.ttl:after {
+    margin-left: 0.5em; /* 文字の左隣 */
+}
+/* ここまでタイトル線 */
+/* レスポンシブ スマートフォン*/
+@media (max-width: 599px){
+    h1 {
+        margin: 8px 0px;
+    }
+    .ttl{
+        white-space: nowrap;
+        font-size: 6vw;
+    }
+    .sub-title{
+        white-space: nowrap;
+    }
+    .page-title{
+        padding: 50px 0px;
+    }
+    .sub-ttl{
+        white-space: nowrap;
+        font-size: 5vw;
+    }
+    .bg-img{
+        height: 200px;
+    }
+    .main-logo{
+        height: 35px;
+    }
+     /* ここからハンバーガーメニュー */
+     .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 40px;
+      }
+      
+      .line-list {
+        display: block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+        margin-left: auto;
+        z-index: 300;
+        cursor: pointer;
+      }
+      
+      /* ハンバーガーメニューの棒 */
+      .line-list span {
+        display: block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+        position: absolute;
+        top: 95%;
+        transform: translateY(50%);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 1px;
+        background: #333;
+      }
+      .line-list span:nth-child(1) {
+        margin-top: -6px;
+      }
+      .line-list span:nth-child(3) {
+        margin-top: 6px;
+      }
+      
+      /* ハンバーガーメニューが開くときに×にする */
+      .line-list.active span:nth-child(1) {
+        -webkit-transform: translateY(6px) rotate(-45deg);
+        transform: translateY(0px) rotate(-45deg);
+        left: 10px;
+      }
+      /* .line-list.active span:nth-child(2) {
+        opacity: 0;
+      } */
+      .line-list.active span:nth-child(2) {
+        -webkit-transform: translateY(-6px) rotate(45deg);
+        transform: translateY(-6px) rotate(45deg);
+        left: 10px;
+      }
+      
+      /* メニューが開いたときの黒い半透明の背景 */
+      .menu-bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.6s;
+        cursor: pointer;
+      }
+      
+      /* メニューの中身 */
+      .global-nav {
+        position: fixed;
+        right: -320px;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        padding-top: 130px;
+        background: #fff;
+        opacity: 0.8;
+        transition: all 0.6s;
+        z-index: 200;
+        overflow-y: auto;
+      }
+      .link-list {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      .link-list li {
+        text-align: center;
+        padding: 0 14px;
+      }
+      .link-list li a {
+        display: block;
+        padding: 20px 0;
+        color: #333;
+      }
+      .link-list li:hover {
+        background: #f8f8f8;
+      }
+      
+      /* メニューが横から開く */
+      .nav-open .global-nav {
+        right: 0;
+      }
+      
+      /* メニューが横から開いた時の背景 */
+      .nav-open .menu-bg {
+        opacity: 0.8;
+        visibility: visible;
+      }
+    /* ここまでハンバーガーメニュー */
+    .hidden-bar{
+        display: inline;
+    }    
+    .hidden-bar-res{
+        display: none;
+    }
+}
+
+
+/*コンタクトページ*/
+.faq-wrapper{
+    display: flex;
+}
+.faq-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.faq-li{
+    display: flex;
+    margin: 5%;
+    padding: 5px;
+    background-color: #eae8e1;
+}
+.faq-icon{
+    width: 12px;
+    margin: 0px 10px 0px 20px;
+}
+.faq-display{
+    display: flex;
+    align-items: center;
+    color: #231815;
+}
+.cont-li{
+    margin: 30px auto;
+    max-width:500px;
+}
+.cont-txt{
+    width: 100%;
+}
+.cont-dd{
+    margin-left: 0px;
+    max-width:500px;
+}
+.cont-form{
+    text-align: center;
+}
+.cont-btn{
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+    margin-bottom: 30px;
+    height: 2.5rem;
+    border-radius: 5%;
+    padding: 2px 12px;
+    border: none;
+}
+.cont-btn:hover{
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.cont-dd{
+    width: 40vw;
+    margin: 0 auto;
+    text-align: left;
+}
+.cont-li-tit{
+    width: 40vw;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+}
+.cont-back-link{
+    margin-bottom: 30px;
+}
+.cont-back-a:link{
+    color: #000000;
+}
+.cont-back-a:visited{
+    color: #d3d3d3;
+}
+.cont-back-a:hover{
+    color: #916659;
+}
+.annotation{
+    margin: 0;
+    color: red;
+}
+@media screen and (max-width: 599px) {
+    .faq-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 30px;
+    }
+    .faq-li{
+        margin: 5px 0px 5px 0px;
+    }
+    /* footer */
+    .page-footer {
+        display: block;
+        text-align: center;
+    }
+    .footer-nav{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .footer-nav p{
+        line-height: 20px;    
+    }
+    
+}
+@media (max-width: 1024px) and (min-width: 600px) {
+        h1 {
+            margin: 8px 0;
+        }
+        .main-logo{
+            height: 35px;
+        }
+        /* ここからハンバーガーメニュー */
+        .menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 40px;
+          }
+          
+          .line-list {
+            display: block;
+            transition: all 0.4s;
+            box-sizing: border-box;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin-right: 0;
+            margin-left: auto;
+            z-index: 300;
+            cursor: pointer;
+          }
+          
+          /* ハンバーガーメニューの棒 */
+          .line-list span {
+            display: block;
+            transition: all 0.4s;
+            box-sizing: border-box;
+            position: absolute;
+            top: 95%;
+            transform: translateY(50%);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 1px;
+            background: #333;
+          }
+          .line-list span:nth-child(1) {
+            margin-top: -6px;
+          }
+          .line-list span:nth-child(3) {
+            margin-top: 6px;
+          }
+          
+          /* ハンバーガーメニューが開くときに×にする */
+          .line-list.active span:nth-child(1) {
+            -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+            left: 10px;
+          }
+          /* .line-list.active span:nth-child(2) {
+            opacity: 0;
+          } */
+          .line-list.active span:nth-child(2) {
+            -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+            left: 10px;
+          }
+          
+          /* メニューが開いたときの黒い半透明の背景 */
+          .menu-bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.6s;
+            cursor: pointer;
+          }
+          
+          /* メニューの中身 */
+          .global-nav {
+            position: fixed;
+            right: -320px;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            padding-top: 68px;
+            background: #fff;
+            opacity: 0.8;
+            transition: all 0.6s;
+            z-index: 200;
+            overflow-y: auto;
+          }
+          .link-list {
+            display: block;
+            margin: 0;
+            padding: 0;
+          }
+          .link-list li {
+            text-align: center;
+            padding: 0 14px;
+          }
+          .link-list li a {
+            display: block;
+            padding: 20px 0;
+            color: #333;
+          }
+          .link-list li:hover {
+            background: #f8f8f8;
+          }
+          
+          /* メニューが横から開く */
+          .nav-open .global-nav {
+            right: 0;
+          }
+          
+          /* メニューが横から開いた時の背景 */
+          .nav-open .menu-bg {
+            opacity: 0.8;
+            visibility: visible;
+          }
+        /* ここまでハンバーガーメニュー */
+        
+        /* footer */
+        .page-footer {
+            display: block;
+            text-align: center;
+        }
+        .footer-nav{
+            margin: 0 auto;
+        }
+        .footer-nav p{
+            line-height: 20px;    
+        }
+}
